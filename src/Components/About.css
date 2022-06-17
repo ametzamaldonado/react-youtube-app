@@ -1,0 +1,57 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+}
+*, *::before, ::after{
+    box-sizing: inherit;
+}
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+.card {
+    padding: 50px;
+    text-align: center;
+    background-color: #474E5D;
+    color: white;
+}
+.container {
+    padding: o 16px;
+}
+.title {
+    color: gray;
+}
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+.button:hover {
+    background-color: #555;
+}
+@media screen and (max-with: 650px) {
+    .column{
+        width: 100%;
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+

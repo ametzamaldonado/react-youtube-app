@@ -1,0 +1,43 @@
+.form-controls {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-controls input[type="text"] {
+  display: flex;
+  border: 1px solid lightgray;
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.form-controls input[type="text"]:focus {
+  outline: none;
+  border-color: gray;
+  box-shadow: 0 2px 5px lightgray;
+}
+
+.form-controls label {
+  display: none;
+}
+
+#search-button {
+  width: auto;
+  height: 40px;
+  border: 2px solid #dbdbdb;
+  padding: 0 20px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif;
+}
+
+#search-button:hover {
+  background-color: goldenrod
+}
+@media all and (max-width: 30em) {
+  #search-button {
+    display: block;
+    margin: 0.2em auto;
+  }
+}

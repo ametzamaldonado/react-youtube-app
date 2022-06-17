@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+// import { useHistory, useParams } from 'react-router-dom';
+import YouTube from 'react-youtube';
 
-function Video() {
+
+const Video = ({ videoId }) => {
   return (
-    <div>Video</div>
+    <div>
+      <YouTube
+        videoId={videoId}
+      />
+    </div>
   )
 }
 
