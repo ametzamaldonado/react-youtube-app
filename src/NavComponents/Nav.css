@@ -1,0 +1,39 @@
+.yt-logo {
+  /* sizing properties below */
+  grid-area: logo;
+  padding-top: 10px;
+  height: 60px;
+  margin: -10px 30px 0;
+}
+
+.search-box {
+  grid-area: search;
+  padding-right: 10%;
+  max-width: 400px;
+  width: 50%;
+  height: 70px;
+  display: flex; /* Displays an element as a block-level flex container */
+}
+
+
+.other-logos {
+  display: inline-block;
+}
+
+.home-logo {
+  grid-area: home-logo;
+  height: 50px;
+  margin: -10px 30px 0;
+  padding-top: 20px;
+}
+
+.about-logo {
+  grid-area: about-us-logo;
+  height: 53px;
+  margin: -10px 30px 0;
+  padding-top: 24px;
+}
+
+button {
+  cursor: pointer
+}

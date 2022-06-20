@@ -1,29 +1,24 @@
-import { Link } from 'react-router-dom';
-// import './VideosIndex.css';
+import ShowVideos from "./ShowVideos";
+import './VideosIndex.css'
 
-export default function VideosIndex(props) {
+
+const VideosIndex = (props) => {
   const { videos } = props;
-  // console.log(videos);
-
+  console.log(videos);
 
   return (
-    <div className='videos-shown'>
+    <>
+  <h2>All Results</h2>
+    <section className='videos-shown'>
       {videos.map(vid => {
-        const video = vid.snippet;
-        console.log(vid)
-        return (
-          <article className='video-results' id={vid.etag}>
-            <h3>
-              <Link to={`/video/${vid.etag}`}> {video.title}</Link>
-            </h3>
-              <img src={video.thumbnails.default.url} />
-              <p>Channel: {video.channelTitle}</p>
-              <p>Description: {video.description}</p>
-          </article>
-        )
+        return <ShowVideos vid={vid}/>
       })}
-    </div>
+    </section>
+    </>
   )
 }
+
+export default VideosIndex;
+
 
 

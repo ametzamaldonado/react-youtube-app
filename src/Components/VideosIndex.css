@@ -1,0 +1,35 @@
+main {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-row: 2;
+    width: 100%; 
+    min-height: fit-content(100vh);
+    /* border: flex; */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* The flex items break into multiple lines */
+    margin-top: 3rem; /* Specifies a fixed top margin */
+    padding: 0;
+    margin-left: 0; /* Specifies a fixed left margin */
+}
+
+.video-results {
+    display: flex;
+    columns: 1fr 1fr;
+    margin: 1rem;
+    /* flex-basis: 45%;  sets the initial main size of a flex item */
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    border: 1px dotted black;
+    border-radius: 10px;
+    width: 75%;
+}
+
+.videos-shown {
+    padding-left: 20%;
+}
+
+main h2 {
+    text-align: center;
+}
