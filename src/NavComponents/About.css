@@ -10,12 +10,13 @@ html {
 }
 .column {
     float: left;
-    width: 33.3%;
     margin-bottom: 16px;
     padding: 0 8px;
+    width: 500px;
 }
 .card {
     padding: 50px;
+    /* width: 100px; */
     text-align: center;
     background-color: #474E5D;
     color: white;
@@ -40,6 +41,16 @@ html {
 .button:hover {
     background-color: #555;
 }
+
+.about-section{
+    text-align: center;
+}
+
+.card img {
+    width: 300px;
+    height: auto;
+}
+
 @media screen and (max-with: 650px) {
     .column{
         width: 100%;
