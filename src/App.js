@@ -23,14 +23,17 @@ export default function App() {
           let videosData = data.items //<- look at data object being returned (key - items)
           setVideos(videosData);
           // console.log(videosData)
-        }
-    );
-  }
+        })
+        // .catch(() => {
+        //   return <Modal/>
+        // })
 
+  }
   // console.log(videos)
   useEffect(() => {
     getData();
   }, [search, count]);
+  
 
   console.log(videos)
   return (
@@ -38,12 +41,12 @@ export default function App() {
       <nav className="navbar">
         < Nav setSearch={setSearch} />
       </nav>
-      <main>
+      <main >
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/videos" element={< VideosIndex videos={videos} />} />
-          <Route path="/view/:vidId" element={<Video />} />
+          <Route path="/videos/:vidId" element={<Video />} />
         </Routes>
       </main>
     </div>
