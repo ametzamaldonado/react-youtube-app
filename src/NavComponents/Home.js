@@ -1,7 +1,9 @@
-import React from 'react'
+
+
 
 function Home() {
-  return (
+
+return (
     <div className="home">
       <article className="no-searches">
         <h2><span>No searches made....</span></h2>
@@ -9,5 +11,6 @@ function Home() {
     </div>
   )
 }
+
 
 export default Home;

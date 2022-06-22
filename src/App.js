@@ -9,11 +9,15 @@ import Home from "./NavComponents/Home";
 import Nav from "./NavComponents/Nav";
 import Video from "./Components/Video";
 import VideosIndex from "./Components/VideosIndex";
+import Modal from "./Components/Modal";
+
 
 export default function App() {
   const [search, setSearch] = useState("");
   const [count, setCount] = useState(10);
   const [videos, setVideos] = useState([]);
+  const [show, setShow] = useState(false)
+  
 
     function getData() {
       return fetch(
@@ -23,23 +27,27 @@ export default function App() {
           let videosData = data.items //<- look at data object being returned (key - items)
           setVideos(videosData);
           // console.log(videosData)
+        }) .catch (() => {
+            setShow(true)
         })
-        // .catch(() => {
-        //   return <Modal/>
-        // })
+
+        
 
   }
   // console.log(videos)
   useEffect(() => {
     getData();
   }, [search, count]);
-  
-
   console.log(videos)
+  
   return (
     <div className="app">
+      <div>
+      <button className={show ? "visible" : "hidden"}onClick = {() => setShow(true) }> Show Modal </button>
+      <Modal  videos={videos} onClose={() => setShow(false)} show={show} />
+      </div>
       <nav className="navbar">
-        < Nav setSearch={setSearch} />
+        < Nav setSearch={setSearch} setSearch />
       </nav>
       <main >
         <Routes>
