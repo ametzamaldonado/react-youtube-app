@@ -24,9 +24,9 @@ export default function App() {
         `https://youtube.googleapis.com/youtube/v3/search?&part=snippet&key=${process.env.REACT_APP_API_KEY}&maxResults=${count}&q=${search}`)
         .then((response) => response.json())
         .then((data) => { //
-          // if (data.error.code >= 400) {
-          //   setShow(true)
-          // }
+          if (data.error.code >= 400) {
+            setShow(true)
+          }
           let videosData = data.items //<- look at data object being returned (key - items)
           setVideos(videosData);
           // console.log(videosData)
