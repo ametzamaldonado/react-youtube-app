@@ -14,6 +14,7 @@ function Video() {
       autoplay: 1,
     },
   };
+  
   return (
     <>
       <YouTube videoId={vidId} opts={opts} />
