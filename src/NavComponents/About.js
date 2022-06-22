@@ -1,5 +1,8 @@
 import React from 'react';
 import './About.css';
+import Kenya from '../PNG/KenyaMighty.jpeg';
+import Ametza from '../PNG/AmetzaMaldonado.jpeg';
+import Victor from '../PNG/VictorLopez.jpeg';
 // KM!
 
 export default function About() {
@@ -23,11 +26,11 @@ export default function About() {
       <div className='row' >
         <div className='column'>
           <div className='card'>
-            <img src='https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff9e70505-a810-41e9-8c68-dd0877044085%2FAmetzayin_Maldonado.jpg?table=block&id=571c4765-cb24-4f07-a79c-aa6a55132d63&spaceId=e2735e9b-8fe9-4c16-bdc1-be142cd1014e&width=2000&userId=1c56301b-4ffe-419f-b2c0-5424d42c657c&cache=v2' />
+            <img src={Ametza} />
             <div className='container'>
               <h2>Ametza Maldonado</h2>
               <p className='title'>CEO & Founder</p>
-              <p>As the eldest of my family here in U.S, I experienced and lived through many ‘firsts’.  As the first to graduate from college, I was faced with the difficult decision of figuring out what to do and where to go from here. I was fortunate enough to be given the opportunity to work in a small firm, but after almost 3 years, I felt lost yet again. Thats how I ended up here, at pursuit, looking to expand my horizons and change career paths. But, when I’m not going through an existential crisis, I enjoy anime, Kpop, rap and watching movies. </p>
+              <p>As the eldest of my family here in U.S, I experienced and lived through many ‘firsts’.  After graduating from college, I still hadn't figured out what I wanted to do or where I wanted to go. I was fortunate enough to work at a small firm, but after almost 3 years, I felt lost yet again. Thats how I ended up here, at pursuit, looking to expand my horizons and change career paths. And, when I’m not going through an existential crisis, I enjoy anime, Kpop, rap and watching movies :D . </p>
               <p>
                 <button className='button'>
                   <a href='mailto:ametzayinmaldonado@pursuit.org'>
@@ -50,7 +53,7 @@ export default function About() {
       <div className='row'>
         <div className='column'>
           <div className='card'>
-            <img src='https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fba207bb8-6949-469a-9ebf-f829125e24d9%2FVictor_Lopez.jpg?table=block&id=0d870e9f-7173-4de0-b2ec-9f0d57ee241c&spaceId=e2735e9b-8fe9-4c16-bdc1-be142cd1014e&width=2000&userId=1c56301b-4ffe-419f-b2c0-5424d42c657c&cache=v2'/>
+            <img src={Victor}/>
             <div className='container'>
               <h2>Victor Lopez</h2>
               <p className='title'>CEO & Founder</p>
@@ -77,7 +80,7 @@ export default function About() {
       <div className='row'>
         <div className='column'>
           <div className='card'>
-            <img src='https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F89492e4d-b659-4b01-a4a7-db0d91442448%2FKenya_Mighty.jpg?table=block&id=4ac1cb00-8305-4e78-802b-b548eb4f129d&spaceId=e2735e9b-8fe9-4c16-bdc1-be142cd1014e&width=2000&userId=1c56301b-4ffe-419f-b2c0-5424d42c657c&cache=v2' />
+            <img src={Kenya} />
             <div className='container'>
               <h2>Kenya Mighty</h2>
               <p className='title'>CEO & Founder</p>
