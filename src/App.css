@@ -29,3 +29,10 @@ span {
 .hidden {
   visibility: hidden;
 }
+
+@media screen and (max-with: 650px) {
+  .app{
+      width: 100%;
+      display: block;
+  }
+}
