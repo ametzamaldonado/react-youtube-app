@@ -14,8 +14,8 @@ main {
 }
 
 .video-results {
-    display: flex;
-    columns: 1fr 1fr;
+    display: block;
+    /* columns: 1fr 1fr; */
     margin: 1rem;
     /* flex-basis: 45%;  sets the initial main size of a flex item */
     padding: 1.5rem;

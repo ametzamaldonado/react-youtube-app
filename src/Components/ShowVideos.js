@@ -12,9 +12,9 @@ function ShowVideos(prop) {
     }
 
     return (
-        <article className='video-results' id={id}>
+        <article key={id} className='video-results' id={id}>
             <Link to={`/videos/${id}`}>
-                <img width={medium.width} height={medium.height} src={medium.url} alt=''/>
+                <img src={medium.url} alt=''/>
                 <h3><span>{title}</span></h3>
             </Link>
         </article>

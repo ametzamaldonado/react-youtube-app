@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import React from 'react';
 import YouTube from "react-youtube";
 import { useState } from "react"; 
+import CommentSection from "./CommentSection";
 
 function Video() {
   const [comments, setComments]= useState([]);
@@ -21,6 +22,8 @@ function Video() {
   return (
     <>
       <YouTube videoId={vidId} opts={opts} />
+      <br />
+      <CommentSection id={vidId} setCommentArry={setCommentArry} arrayOfComments={arrayOfComments}/>
       <br />
       <Link to="/videos"><button>Go Back</button></Link>
       
