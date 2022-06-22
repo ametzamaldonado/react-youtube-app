@@ -1,60 +1,27 @@
-body {
-  position: relative;
-  background: #f0f0f0;
-  font-family: "roboto", sans-serif;
-}
-
 .app {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
 
-/* .videos-shown {
-    display: inline;
-    border: double black;
-    background-color: aquamarine;
-}
 
-.video-results {
-    border: solid purple;
-} */
 
 .navbar {
-  /* display: flex; */
   display: grid;
   grid-template-areas: "logo search home-logo about-us-logo" ;
   grid-template-columns: .5fr 1fr .5fr;
-  flex-direction: row;
-  /* position: fixed; */
-  grid-column: 1 / 4;
+  flex-direction: row; /* The direction text is laid out in a line */
+  grid-column: 1 / 4; 
   grid-row: 1;
   width: 100%;
-
-  /* top: 0;
-    left: 0;
-    
-    height: 60px; */
   background: black;
-  /* display: flex; */
-  align-items: center;
-  /* padding: 0 2.5vw; */
+  align-items: center; /* Sets the alignment on all direct children, as a group*/
 }
-.side-bar {
-  /* position: fixed; */
-  /* top: 60px; */
-  /* left: 0; */
-  /* min-width: 250px;
-    width: 250px; */
-  /* height: calc(100vh - 60px); */
-  background: #f0ead6;
-  /* padding-right: 10px; */
-}
-.display {
-  /* position: right;
-    display: block */
 
-  grid-column: 2 / 4;
-  grid-row: 2;
+span {
+  font-weight: bold;
+}
+
+.no-searches {
+  text-align: center;
 }
