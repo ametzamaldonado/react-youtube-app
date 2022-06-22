@@ -1,73 +1,79 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-*, *::before, ::after{
-    box-sizing: inherit;
+*,
+*::before,
+::after {
+  box-sizing: inherit;
 }
 .column {
-    float: left;
-    margin-bottom: 16px;
-    padding: 0 8px;
-    width: 500px;
+  float: left;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  width: 500px;
 }
 .card {
-    padding: 50px;
-    /* width: 100px; */
-    text-align: center;
-    background-color: #474E5D;
-    color: white;
+  padding: 50px;
+  /* width: 100px; */
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
 }
 .container {
-    padding: o 16px;
+  padding: o 16px;
 }
 .title {
-    color: gray;
+  color: gray;
 }
 .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
 }
 .button:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
-.about-section{
-    text-align: center;
+.about-section {
+  text-align: center;
 }
 
 .card img {
-    width: 300px;
-    height: auto;
+  width: 300px;
+  height: auto;
 }
 
-@media screen and (max-with: 650px) {
-    .column{
-        width: 100%;
-        display: block;
-    }
+@media screen and (max-with: 510px) {
+  html {
+    font-size: 16px;
+  }
+
+  .app {
+    font-size: small;
+    text-align: auto;
+    width: fit-content;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  }
 }
 
 /* unvisited link */
 a:link {
-    color: red;
-  }
-  
-  /* visited link */
-  a:visited {
-    color: green;
-  }
+  color: red;
+}
 
-
-
-
+/* visited link */
+a:visited {
+  color: green;
+}
