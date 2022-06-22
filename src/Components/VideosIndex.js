@@ -1,5 +1,4 @@
 import ShowVideos from "./ShowVideos";
-
 import './VideosIndex.css'
 
 
@@ -10,7 +9,7 @@ const VideosIndex = (props) => {
     <>
       <h2>All Results</h2>
       <section className='videos-shown'>
-        {videos.map(vid => {
+        {videos?.map(vid => {
           return <ShowVideos vid={vid} />
         })}
       </section>

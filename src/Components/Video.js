@@ -1,8 +1,11 @@
 import { Link, useParams } from "react-router-dom";
 import React from 'react';
 import YouTube from "react-youtube";
+import { useState } from "react"; 
 
 function Video() {
+  const [comments, setComments]= useState([]);
+
   let params = useParams();
   const { vidId } = params;
   console.log(vidId)
@@ -20,6 +23,7 @@ function Video() {
       <YouTube videoId={vidId} opts={opts} />
       <br />
       <Link to="/videos"><button>Go Back</button></Link>
+      
     </>
   );
 }

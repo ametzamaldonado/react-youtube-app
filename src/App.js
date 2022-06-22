@@ -24,11 +24,14 @@ export default function App() {
         `https://youtube.googleapis.com/youtube/v3/search?&part=snippet&key=${process.env.REACT_APP_API_KEY}&maxResults=${count}&q=${search}`)
         .then((response) => response.json())
         .then((data) => { //
+          if (data.error.code >= 400) {
+            setShow(true)
+          }
           let videosData = data.items //<- look at data object being returned (key - items)
           setVideos(videosData);
           // console.log(videosData)
         }) .catch (() => {
-            setShow(true)
+          setShow(true)
         })
 
         
@@ -43,11 +46,10 @@ export default function App() {
   return (
     <div className="app">
       <div>
-      <button className={show ? "visible" : "hidden"}onClick = {() => setShow(true) }> Show Modal </button>
       <Modal  videos={videos} onClose={() => setShow(false)} show={show} />
       </div>
       <nav className="navbar">
-        < Nav setSearch={setSearch} setSearch />
+        < Nav setSearch={setSearch} />
       </nav>
       <main >
         <Routes>
