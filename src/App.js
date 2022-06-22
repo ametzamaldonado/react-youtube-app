@@ -16,8 +16,8 @@ export default function App() {
   const [search, setSearch] = useState("");
   const [count, setCount] = useState(10);
   const [videos, setVideos] = useState([]);
-  const [show, setShow] = useState(false)
-  const [arrayOfComments, setCommentArry ] = useState([])
+  const [show, setShow] = useState(false);
+  const [arrayOfComments, setCommentArry] = useState([]);
 
   function getData() {
     if (!search){

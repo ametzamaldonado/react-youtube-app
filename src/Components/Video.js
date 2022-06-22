@@ -2,11 +2,10 @@ import { Link, useParams } from "react-router-dom";
 import React from 'react';
 import YouTube from "react-youtube";
 import { useState } from "react"; 
-import CommentSection from "./CommentSection";
+import CommentSection from "../ComemntSection/CommentSection";
 
-function Video() {
-  const [comments, setComments]= useState([]);
-
+function Video(props) {
+  const {setCommentArry, arrayOfComments} = props;
   let params = useParams();
   const { vidId } = params;
   console.log(vidId)

@@ -1,8 +1,10 @@
 import { useState } from "react";
 import './CommentSection.css'
 
-const CommentSection = ({id, setCommentArry, arrayOfComments}) => {
-    console.log(id)
+const CommentSection = ( props ) => {
+    console.log(props)
+    const {id, setCommentArry, arrayOfComments} = props;
+    console.log(setCommentArry)
     const [name, setName] = useState('');
     const [comment, setComment] = useState('');
     
